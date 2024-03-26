@@ -7,30 +7,30 @@ function FaqAccordion() {
     <div className='faq-section'>
         <div className='container d-flex flex-column align-items-center'>
             <h2 className='text-center text-capitalize mb-5'>Frequently asked questions</h2>
-            <p className='text-center mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat numquam rem expedita similique necessitatibus dolore magnam natus sit ipsa, quae neque accusantium placeat laudantium mollitia, reprehenderit alias incidunt, delectus obcaecati cupiditate sed omnis repudiandae eos! Quasi unde veritatis labore quibusdam.</p>
+            <p className='text-center mb-5'>Having Doubts? Check below to find your answer. Doubt Not cleared? Contact the Team DEVx AVES.</p>
             <Accordion defaultActiveKey="" flush>
                 <Accordion.Item eventKey='0'>
-                    <Accordion.Header>First question ?</Accordion.Header>
+                    <Accordion.Header>Can I Learn in My Free Time ?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
+                        Yes Our Courses are completely Online so that you can learn anytime, anywhere
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey='1'>
-                    <Accordion.Header>Second question ?</Accordion.Header>
+                    <Accordion.Header>Are They useful ?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
+                        Our Courses are Modern and Updated by experts to match with the present day scenarios and learn the latest
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey='2'>
-                    <Accordion.Header>Third question ?</Accordion.Header>
+                    <Accordion.Header>How to access Courses ?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
+                        Log In securely in our Platform and create a account to get curated content made just for you
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey='3'>
-                    <Accordion.Header>Fourth question ?</Accordion.Header>
+                    <Accordion.Header>Are they Verified ?</Accordion.Header>
                     <Accordion.Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab deserunt eaque nostrum voluptate, facilis ratione quo ducimus quod qui eius nobis quam temporibus similique fugit? Molestias, illo, maxime nulla aliquid ut pariatur corrupti aspernatur dolor assumenda quos officia eos?
+                        Our all courses and resources are government approved and certified
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

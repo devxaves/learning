@@ -5,7 +5,7 @@ function ChooseSection() {
   return (
     <div>
         <div className="container">
-            <h2 className='text-center mb-5'>Why choose React University ?</h2>
+            <h2 className='text-center mb-5'>Why choose Officers Club ?</h2>
             <div className='row g-4'>
                 <div className='col-lg-4'>
                     <Card className='d-flex align-items-center border-0 h-100'>
@@ -16,10 +16,10 @@ function ChooseSection() {
                         </div>
                         <Card.Body>
                             <Card.Title className='text-center text-capitalize mb-3'>
-                                2 trophies received
+                                Best Platform
                             </Card.Title>
                             <Card.Text className='text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum qui facilis perspiciatis, ab pariatur! Eaque maxime ratione illum distinctio?
+                                Winner Of the Best National awards for Training and education
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -33,10 +33,10 @@ function ChooseSection() {
                         </div>
                         <Card.Body>
                             <Card.Title className='text-center text-capitalize mb-3'>
-                                We keep our students happy
+                                1k+ Happy Learners
                             </Card.Title>
                             <Card.Text className='text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum qui facilis perspiciatis, ab pariatur! Eaque maxime ratione illum distinctio?
+                                Best Choice For Learning and Upskilling in the Career
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -50,10 +50,10 @@ function ChooseSection() {
                         </div>
                         <Card.Body>
                             <Card.Title className='text-center text-capitalize mb-3'>
-                                3 locations in UK
+                                Serving For India
                             </Card.Title>
                             <Card.Text className='text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum qui facilis perspiciatis, ab pariatur! Eaque maxime ratione illum distinctio?
+                                Made By Indians, Taught by Indians to help the Civil Servants of India serve better
                             </Card.Text>
                         </Card.Body>
                     </Card>
