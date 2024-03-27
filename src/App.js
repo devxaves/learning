@@ -27,7 +27,7 @@ function App() {
   }, [location]);
 
   var userid = "";
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading, logout } = useAuth0();
   isAuthenticated ? (userid = user.sub.slice(14)) : (userid = "user");
 
   return (
@@ -53,6 +53,8 @@ function App() {
                 <Nav.Link href={'/'+userid+'/news'} className='text-uppercase'>news</Nav.Link>
                 <Nav.Link href={'/'+userid+'/profile'} className='text-uppercase'>profile</Nav.Link>
                 <Nav.Link href={'/'+userid+'/contact'} className='text-uppercase'>Get in touch</Nav.Link>
+                <button className='btn btn-outline-danger btn-m mb-2 mb-md-2 margin' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                  Log Out</button>
               </Nav>
             </Navbar.Collapse>
           </Container>

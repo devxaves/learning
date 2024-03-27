@@ -2,8 +2,17 @@
   text-align: center;
 }
 
-h1, h2, h3, p, a {
-  font-family: 'Montserrat', sans-serif;
+.margin {
+  margin-left: 40px;
+  border: 2px solid #dc3545;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
 }
 
 header h1 {
@@ -24,7 +33,7 @@ nav .navbar-toggler:focus {
 }
 
 .scale-hover-effect {
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .scale-hover-effect:hover {
