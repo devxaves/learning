@@ -10,8 +10,10 @@ import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
 import logo from './logo2.png';
+import Profile from './pages/Profile/Profile';
+import Callback from './pages/Callback/Callback'
 
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
   const location = useLocation();
@@ -25,7 +27,9 @@ function App() {
     }
   }, [location]);
 
-  
+  var userid = "";
+  const { user, isAuthenticated, isLoading } = useAuth0();
+  isAuthenticated ? (userid = user.sub.slice(14)) : (userid = "user");
 
   return (
     <div>
@@ -46,10 +50,10 @@ function App() {
             <Navbar.Toggle aria-controls='basic-navbar-nav' className='bg-light' />
             <Navbar.Collapse id='basic-navbar-nav'>
               <Nav className='me-auto justify-content-end w-100'>
-                <Nav.Link href='/user/' className='text-uppercase'>courses</Nav.Link>
-                <Nav.Link href='/user/about' className='text-uppercase'>news</Nav.Link>
-                <Nav.Link href='/user/blog' className='text-uppercase'>profile</Nav.Link>
-                <Nav.Link href='/user/contact' className='text-uppercase'>Get in touch</Nav.Link>
+                <Nav.Link href={'/'+userid+'/'} className='text-uppercase'>courses</Nav.Link>
+                <Nav.Link href={'/'+userid+'/about'} className='text-uppercase'>news</Nav.Link>
+                <Nav.Link href={'/'+userid+'/profile'} className='text-uppercase'>profile</Nav.Link>
+                <Nav.Link href={'/'+userid+'/contact'} className='text-uppercase'>Get in touch</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -57,11 +61,12 @@ function App() {
       )}
 
       <Routes>
+        <Route path='/callback' element={<Callback />} />
         <Route path='/' element={<Home />} />
-        <Route path='/user/' element={<Courses />} />
-        <Route path='/user/about' element={<About />} />
-        <Route path='/user/blog' element={<Blog />} />
-        <Route path='/user/contact' element={<Contact />} />
+        <Route path={'/'+userid+'/'} element={<Courses />} />
+        <Route path={'/'+userid+'/about'} element={<About />} />
+        <Route path={'/'+userid+'/profile'} element={<Profile />} />
+        <Route path={'/'+userid+'/contact'} element={<Contact />} />
       </Routes>
 
       <footer>

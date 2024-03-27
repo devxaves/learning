@@ -14,7 +14,7 @@ root.render(
     domain="dev-diawlmgp0gmfgjtb.us.auth0.com"
     clientId="5vT9RNS2ses70iddKwDmYOTO7ee5OLVm"
     authorizationParams={{
-      redirect_uri: 'http://localhost:3001/user/'
+      redirect_uri: `http://localhost:3001/callback/`
     }}
   >
   <BrowserRouter>
