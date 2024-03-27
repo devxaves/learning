@@ -26,49 +26,56 @@ const courses = [
         img: [BusinessCourseImg],
         title: 'Buisness and Market',
         description: 'Knowing abbout the Business and Market can help you take better decisions in the present times. Join to know hoe the Market works and Business grows.',
-        foot: 'Rs. 600/- only'
+        foot: 'Rs. 600/- only',
+        youtubeId:'https://youtu.be/Cr0KdqZ954c?si=Loy7sqekegCyooSI'
     },
     {
         id: 3,
         img: [ComputerScienceCourseImg],
         title: 'Technology and Engineering',
         description: 'Technology helps you be par with this booming era of science and moderanisation. Know about the basics of engineering and upskill yourself',
-        foot: 'Rs. 600/- only'
+        foot: 'Rs. 600/- only',
+        youtubeId:'https://youtu.be/GlFg-J9Dgz8?si=OwYXZmfQqIq17zN9'
     },
     {
         id: 4,
         img: [EducationCourseImg],
         title: 'Education and Teaching',
         description: 'Want to share and spread your knowledge? A teacher can do so. Learn about the teaching skills and the modern education styles here',
-        foot: 'Rs. 700/- only'
+        foot: 'Rs. 700/- only',
+        youtubeId:'https://youtu.be/fkqt9g_4FkY?si=pknoJTSsUsjhnoN5'
     },
     {
         id: 5,
         img: [HealthcareCourseImg],
         title: 'Health and Diseases',
         description: 'Doctors are not avaliable everywhere and you have to learn taking care of the health and doing first aid in times of need. Learn about the health and diseases here',
-        foot: 'Rs. 500/- only'
+        foot: 'Rs. 500/- only',
+        youtubeId:'https://youtu.be/thAyrNpD77A?si=Vnfu5sCcb15remVQ'
     },
     {
         id: 6,
         img: [LawCourseImg],
         title: 'Law and Governance',
         description: 'Being an Indian citizen we should know detail about all the laws and fundamental rights of a person. Learn about the Laws, Bills and Government acts here',
-        foot: 'Rs. 600/- only'
+        foot: 'Rs. 600/- only',
+        youtubeId:'https://youtube.com/playlist?list=PLXDEf6c9_zMey0_2uo10bVF__3xreDRMg&si=JAwR3VzsTao-jWnA'
     },
     {
         id: 7,
         img: [MusicCourseImg],
         title: 'Music and dance',
         description: 'Do you have the interest and taste for our ancient tradition and styles of music and dance. Learn here and upskill your artistic skills to perform your heart out',
-        foot: 'Rs. 500/- only'
+        foot: 'Rs. 500/- only',
+        youtubeId:'https://youtu.be/QBL6AlECywI?si=WCfyy89tzVBrfKVF'
     },
     {
         id: 8,
         img: [SportCourseImg],
         title: 'Sports and Yoga',
         description: 'Staying Fit and Strong is very much important. Learn about the various sports nad games and also get a yoga instructor to help you learn and stay happy and fit',
-        foot: 'Rs. 800/- only'
+        foot: 'Rs. 800/- only',
+        youtubeId:'https://youtu.be/V2NO_DnQQ1c?si=XDnzo8qJ8SqHBYQv'
     },
 ];
 
@@ -86,7 +93,7 @@ function Courses() {
               <div className='row g-4'>
                   {courses.map((course) => (
                       <div key={course.id} className='col-lg-6'>
-                          <Link to={`${course.youtubeId}`} className="text-decoration-none text-reset">
+                          <Link target="_blank" to={`${course.youtubeId}`} className="text-decoration-none text-reset">
                               <Card className='text-white shadow scale-hover-effect'>
                                   <Card.Img src={course.img} />
                                   <Card.ImgOverlay className='d-flex flex-column align-items-center justify-content-center p-md-5'>
