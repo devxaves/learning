@@ -1,0 +1,19 @@
+.section {
+  /* margin-top: 100px; */
+  position: relative;
+  top: 100px;
+}
+.user-details-container {
+  display: inline-flex;
+  flex-direction: column;
+
+  img {
+    /* display: inline-block; */
+    /* height: 15vh;
+    aspect-ratio: 1; */
+    background-color: rgb(76, 76, 76);
+    margin: 1rem 3rem 2.5rem 3rem;
+  }
+  h2 {
+  }
+}
