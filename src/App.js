@@ -6,8 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from './pages/Home/Home';
 import Courses from './pages/Courses/Courses';
-import About from './pages/About/About';
-import Blog from './pages/Blog/Blog';
+import News from './pages/News/News'
 import Contact from './pages/Contact/Contact';
 import logo from './logo2.png';
 import Profile from './pages/Profile/Profile';
@@ -51,7 +50,7 @@ function App() {
             <Navbar.Collapse id='basic-navbar-nav'>
               <Nav className='me-auto justify-content-end w-100'>
                 <Nav.Link href={'/'+userid+'/'} className='text-uppercase'>courses</Nav.Link>
-                <Nav.Link href={'/'+userid+'/about'} className='text-uppercase'>news</Nav.Link>
+                <Nav.Link href={'/'+userid+'/news'} className='text-uppercase'>news</Nav.Link>
                 <Nav.Link href={'/'+userid+'/profile'} className='text-uppercase'>profile</Nav.Link>
                 <Nav.Link href={'/'+userid+'/contact'} className='text-uppercase'>Get in touch</Nav.Link>
               </Nav>
@@ -64,7 +63,7 @@ function App() {
         <Route path='/callback' element={<Callback />} />
         <Route path='/' element={<Home />} />
         <Route path={'/'+userid+'/'} element={<Courses />} />
-        <Route path={'/'+userid+'/about'} element={<About />} />
+        <Route path={'/'+userid+'/news'} element={<News />} />
         <Route path={'/'+userid+'/profile'} element={<Profile />} />
         <Route path={'/'+userid+'/contact'} element={<Contact />} />
       </Routes>
