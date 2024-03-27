@@ -10,6 +10,7 @@ import LawCourseImg from '../../utils/images/law-course.jpg';
 import MusicCourseImg from '../../utils/images/music-course.jpg';
 import SportCourseImg from '../../utils/images/sport-course.jpg';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
+import { Link } from 'react-router-dom';
 
 const courses = [
     {
@@ -17,7 +18,8 @@ const courses = [
         img: [ArtCourseImg],
         title: 'Arts and Graphics',
         description: 'Interested about drawings, designs or are you an Artit Yourself? Join now to level up your skills and craete arts in your leisure time',
-        foot: 'Rs. 500/- only'
+        foot: 'Rs. 500/- only',
+        youtubeId: 'https://youtu.be/XewspIh58Qg?si=ErG51l9-yC2lf4o3'
     },
     {
         id: 2,
@@ -71,34 +73,35 @@ const courses = [
 ];
 
 function Courses() {
-  return (
-    <div className='courses-page'>
-        <header className='height-75'>
-            <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
-                <h1 className='text-center fw-semibold'>Courses</h1>
-                <p className='text-center w-75 mb-5'>Checkout our Diverse range of Courses and topics which covers everything you need in your life and career. Learn now and upskill yourself and the people around you</p>
-            </div>
-        </header>
-
-        <div className='container py-5'>
-            <div className='row g-4'>
-                {courses.map((course) => (
-                    <div key={course.id} className='col-lg-6'>
-                        <Card className='text-white shadow scale-hover-effect'>
-                            <Card.Img src={course.img} />
-                            <Card.ImgOverlay className='d-flex flex-column align-items-center justify-content-center p-md-5'>
-                                <Card.Title className='fs-1 text-danger'>{course.title}</Card.Title>
-                                <Card.Text className='text-center'>{course.description}</Card.Text>
-                                <div className='foots'>
-                                    {course.foot}
-                                </div>
-                            </Card.ImgOverlay>
-                            
-                        </Card>
-                    </div>
-                ))}
-            </div>
-        </div>
+    return (
+      <div className='courses-page'>
+          <header className='height-75'>
+              <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
+                  <h1 className='text-center fw-semibold'>Courses</h1>
+                  <p className='text-center w-75 mb-5'>Checkout our Diverse range of Courses and topics which covers everything you need in your life and career. Learn now and upskill yourself and the people around you</p>
+              </div>
+          </header>
+  
+          <div className='container py-5'>
+              <div className='row g-4'>
+                  {courses.map((course) => (
+                      <div key={course.id} className='col-lg-6'>
+                          <Link to={`${course.youtubeId}`} className="text-decoration-none text-reset">
+                              <Card className='text-white shadow scale-hover-effect'>
+                                  <Card.Img src={course.img} />
+                                  <Card.ImgOverlay className='d-flex flex-column align-items-center justify-content-center p-md-5'>
+                                      <Card.Title className='fs-1 text-danger'>{course.title}</Card.Title>
+                                      <Card.Text className='text-center'>{course.description}</Card.Text>
+                                      <div className='foots'>
+                                          {course.foot}
+                                      </div>
+                                  </Card.ImgOverlay>
+                              </Card>
+                          </Link>
+                      </div>
+                  ))}
+              </div>
+          </div>
 
         <div className='bg-dark text-light py-5'>
             <FaqAccordion />
