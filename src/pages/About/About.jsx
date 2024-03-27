@@ -14,11 +14,9 @@ function About() {
                 <p className='text-center w-75 mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error recusandae harum ullam repellat cum? Nisi unde, incidunt natus ut ratione dolore quasi at dolores molestias.</p>
             </div>
         </header>
-     
+     <div className="container"></div>
    
     </div>
-
-
   )
 }
 
