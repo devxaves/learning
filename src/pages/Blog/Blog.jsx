@@ -56,8 +56,8 @@ function Blog() {
     <div className='blog-page'>
         <header className='height-75'>
             <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
-                <h1 className='text-center fw-semibold'>Blog</h1>
-                <p className='text-center w-75 mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.</p>
+                <h1 className='text-center fw-semibold'>Stay Informed: Latest News and Updates from India</h1>
+                <p className='text-center w-75 mb-5'>Explore breaking news, insightful analyses, and real-time updates on India’s politics, economy, culture, and more. Stay ahead with our comprehensive coverage.</p>
             </div>
         </header>
 
