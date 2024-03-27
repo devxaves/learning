@@ -16,57 +16,39 @@ const blogs = [
     {
         id: 1,
         img: [Blog1Img],
-        title: 'Blog 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
+        title: 'Academic Aspirations: The Heart of the University',
+        description: 'Dive into the world of algorithms, software engineering, and artificial intelligence. Develop practical skills and shape the future of technology. Enroll today!'
     },
     {
         id: 2,
-        img: [Blog2Img],
-        title: 'Blog 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
+        img: [Blog3Img],
+        title: 'Emerging Scholars: Celebrating the Graduates',
+        description: 'Embark on a transformative journey with our diverse graduate programs. Gain specialized knowledge, explore cutting-edge research, and thrive with mentorship from industry experts. Whether it’s engineering, business, or the arts, our supportive community propels you toward success.'
     },
     {
         id: 3,
-        img: [Blog3Img],
-        title: 'Blog 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
+        img: [Blog4Img],
+        title: 'Frames of Learning: University in Pictures',
+        description: 'Unlock Your Potential: Explore Diverse Courses at Our University! From cutting-edge technology to timeless humanities, our courses empower you to learn, grow, and thrive. Enroll today and embark on a journey of knowledge!'
     },
     {
         id: 4,
-        img: [Blog4Img],
-        title: 'Blog 4',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
+        img: [Blog5Img],
+        title: 'Collaborative Learning: Group Study Insights',
+        description: 'Unlock the Power of Collective Intelligence: Our Group Study Insights Course fosters collaboration, critical thinking, and shared knowledge. Join a dynamic community of learners as you explore diverse subjects together. Enroll now and amplify your learning journey!'
     },
     {
         id: 5,
-        img: [Blog5Img],
-        title: 'Blog 5',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
+        img: [Blog8Img],
+        title: 'Crafting Excellence: The Skilled Artisan Amidst Machinery',
+        description: 'Explore manufacturing processes, automation, and design principles. Shape the future of industry with us!'
     },
     {
         id: 6,
-        img: [Blog6Img],
-        title: 'Blog 6',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
-    },
-    {
-        id: 7,
-        img: [Blog7Img],
-        title: 'Blog 7',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
-    },
-    {
-        id: 8,
-        img: [Blog8Img],
-        title: 'Blog 8',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
-    },
-    {
-        id: 9,
         img: [Blog9Img],
-        title: 'Blog 9',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas suscipit ratione quod culpa, eius ad consequatur, dolor quasi nulla optio quo error tempora temporibus distinctio quidem asperiores dolore ex amet nam. Consequatur, odit corporis.'
-    },
+        title: 'Academic Nexus: Capturing the Heart of the University',
+        description: 'From humanities to cutting-edge sciences, our university empowers curious minds. Join us in shaping tomorrow! '
+    }
 ];
 
 function Blog() {
