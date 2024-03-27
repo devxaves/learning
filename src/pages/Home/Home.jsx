@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ChooseSection from "../../components/ChooseSection/ChooseSection";
 import FaqAccordion from "../../components/FaqAccordion/FaqAccordion";
 import { Card } from "react-bootstrap";
-import video1 from "./video1.mp4";
+import video1 from "../../utils/images/video1.mp4";
 import { useEffect, useState, useRef } from "react";
 
 import { useAuth0 } from "@auth0/auth0-react";
