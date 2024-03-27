@@ -16,7 +16,6 @@ import Profile from './pages/Profile/Profile';
 import Callback from './pages/Callback/Callback'
 >>>>>>> Stashed changes
 
-
 import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
