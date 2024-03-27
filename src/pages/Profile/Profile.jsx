@@ -14,9 +14,9 @@ const Profile = () => {
     
     
     isAuthenticated && (
+      <>
+      <section className="section"></section>
       
-      
-      <div className="section">
         <div className="user-details-container">
           <img
             src={user.picture}
@@ -27,8 +27,9 @@ const Profile = () => {
           />
           <h2>{user.name}</h2>
           <p>{user.email}</p>
-        </div>
+        
       </div>
+        </>
     )
   );
 };
