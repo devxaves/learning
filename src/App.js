@@ -1,5 +1,6 @@
+import React, { useState } from 'react';
 import './App.css';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link, Routes, Route, useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,44 +14,50 @@ import logo from './logo2.png';
 
 
 function App() {
+  const location = useLocation();
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  React.useEffect(() => {
+    if (location.pathname === '/') {
+      setShowNavbar(false);
+    } else {
+      setShowNavbar(true);
+    }
+  }, [location]);
+
   
 
   return (
     <div>
-      <Navbar expand="lg" className='position-absolute w-100'>
-        <Container>
-          <Navbar.Brand>
-            <Link to="/" className='navbar-brand d-flex align-items-center'>
-              <img width="48" height="48" viewBox="0 0 16 16" src={logo}>
-                
-              </img>
-              <span className='mx-2 text-light lh-1 fw-semibold'>
-                OFFICERS
-                <br></br>
-                CLUB
-                <br></br>
-                
-              </span>
-            </Link>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' className='bg-light' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            {window.location!='http://localhost:3001/'?
-            <Nav className='me-auto justify-content-end w-100'>
-
-              <Nav.Link href='/user/' className='text-uppercase'>Our courses</Nav.Link>
-              <Nav.Link href='/user/about' className='text-uppercase'>About us</Nav.Link>
-              <Nav.Link href='/user/blog' className='text-uppercase'>Blog</Nav.Link>
-              <Nav.Link href='/user/contact' className='text-uppercase'>Get in touch</Nav.Link>
-             
-            </Nav>:<></>}
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      {showNavbar && (
+        <Navbar expand="lg" className='position-absolute w-100'>
+          <Container>
+            <Navbar.Brand>
+              <Link to="/" className='navbar-brand d-flex align-items-center'>
+                <img width="48" height="48" viewBox="0 0 16 16" src={logo} alt="logo" />
+                <span className='mx-2 text-light lh-1 fw-semibold'>
+                  OFFICERS
+                  <br></br>
+                  CLUB
+                  <br></br>
+                </span>
+              </Link>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls='basic-navbar-nav' className='bg-light' />
+            <Navbar.Collapse id='basic-navbar-nav'>
+              <Nav className='me-auto justify-content-end w-100'>
+                <Nav.Link href='/user/' className='text-uppercase'>courses</Nav.Link>
+                <Nav.Link href='/user/about' className='text-uppercase'>news</Nav.Link>
+                <Nav.Link href='/user/blog' className='text-uppercase'>profile</Nav.Link>
+                <Nav.Link href='/user/contact' className='text-uppercase'>Get in touch</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      )}
 
       <Routes>
         <Route path='/' element={<Home />} />
-        
         <Route path='/user/' element={<Courses />} />
         <Route path='/user/about' element={<About />} />
         <Route path='/user/blog' element={<Blog />} />

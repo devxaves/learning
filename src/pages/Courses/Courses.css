@@ -9,3 +9,15 @@
 .courses-page .card:hover {
     cursor: pointer;
 }
+
+.foots {
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+}
